@@ -303,6 +303,9 @@ export function SearchDialog() {
               </div>
             </div>
             <DialogFooter>
+              <div className="text-xs text-gray-500 flex gap-2 dark:text-gray-100">
+                * 回答由AI检索法律文件后生成，仅供参考！
+              </div>
               <Button type="submit" className="bg-red-500">
                 Ask
               </Button>
