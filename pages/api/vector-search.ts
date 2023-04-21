@@ -117,10 +117,11 @@ export default async function handler(req: NextRequest) {
 
     const prompt = codeBlock`
       ${oneLine`
-        You are a very enthusiastic legal representative who likes
-        helping others! Give the following parts of the law
-        section of the document below, please use this information only to answer questions,
-        Output in Chinese.
+       You are a very enthusiastic legal representative who likes to help others! 
+       Here are some relevant legal provisions. Give the following parts of the law 
+       section of the document below, please use this information only to answer questions, 
+       Please note that if there are updates to the legal provisions, please refer to the latest content.
+       Output in Chinese.
       `}
 
       Context sections:
@@ -135,7 +136,7 @@ export default async function handler(req: NextRequest) {
     const completionOptions: CreateCompletionRequest = {
       model: 'text-davinci-003',
       prompt,
-      max_tokens: 512,
+      max_tokens: 256,
       temperature: 0,
       stream: true,
     }

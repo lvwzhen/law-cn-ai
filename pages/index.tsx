@@ -24,14 +24,13 @@ export default function Home() {
           <SearchDialog />
         </div>
 
-        <div className="py-8 w-full flex items-center justify-center space-x-6">
+        <div className="py-8 w-full md:flex items-center justify-center md:space-x-6">
           <div className="opacity-75 transition hover:opacity-100 cursor-pointer">
             <Link href="https://magickpen.com/" className="flex items-center justify-center">
-              <p className="text-base mr-2">Supported By MagickPen</p>
-              <Image src={'/logo.png'} width="20" height="20" alt="MagickPen logo" />
+              <p className="text-base mr-2">Made by <Image src={'/logo.png'} width="20" height="20" alt="MagickPen logo" /> MagickPen</p>
             </Link>
           </div>
-          <div className="border-l border-gray-300 w-1 h-4" />
+          <div className="border-l border-gray-300 w-1 h-4 hidden md:block" />
           <div className="flex items-center justify-center space-x-4">
             <div className="opacity-75 transition hover:opacity-100 cursor-pointer">
               <Link
