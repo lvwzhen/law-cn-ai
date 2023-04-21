@@ -126,9 +126,8 @@ export default async function handler(req: NextRequest) {
       Context sections:
       ${contextText}
 
-      Question: """
+      Question: 
       ${sanitizedQuery}
-      """
 
       Answer:
     `

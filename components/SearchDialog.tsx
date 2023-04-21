@@ -259,7 +259,7 @@ export function SearchDialog() {
                   }`}
                 />
               </div>
-              <div className="text-xs text-gray-500 dark:text-gray-100">
+              <div className="text-xs text-gray-500 flex gap-2 dark:text-gray-100">
                 Or try:{' '}
                 <button
                   type="button"
@@ -273,19 +273,6 @@ export function SearchDialog() {
                   }
                 >
                   离婚需要双方同意吗？
-                </button>
-                <button
-                  type="button"
-                  className="px-1.5 py-0.5
-                  bg-slate-50 dark:bg-gray-500
-                  hover:bg-slate-100 dark:hover:bg-gray-600
-                  rounded border border-slate-200 dark:border-slate-600
-                  transition-colors"
-                  onClick={(_) =>
-                    setSearch('借钱给别人需要注意什么？')
-                  }
-                >
-                  借钱给别人需要注意什么？
                 </button>
                 <button
                   type="button"
