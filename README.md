@@ -1,4 +1,6 @@
-# Next.js OpenAI Doc Search Starter
+# 中国法律AI助手
+
+法律文件出处：https://github.com/LawRefBook/Laws
 
 This starter takes all the `.mdx` files in the `pages` directory and processes them to use as custom context within [OpenAI Text Completion](https://platform.openai.com/docs/guides/completion) prompts.
 
