@@ -15,7 +15,7 @@ export default function Home() {
         <title>中国法律AI助手</title>
         <meta
           name="description"
-          content="Next.js Template for building OpenAI applications with Supabase."
+          content="中国法律AI助手"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
