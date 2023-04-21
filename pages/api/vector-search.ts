@@ -120,7 +120,7 @@ export default async function handler(req: NextRequest) {
         You are a very enthusiastic legal representative who likes
         helping others! Give the following parts of the law
         section of the document below, please use this information only to answer questions,
-        Output in Chinese and markdown format.
+        Output in Chinese.
       `}
 
       Context sections:
@@ -130,7 +130,7 @@ export default async function handler(req: NextRequest) {
       ${sanitizedQuery}
       """
 
-      Answer as markdown (including related code snippets if available):
+      Answer:
     `
 
     const completionOptions: CreateCompletionRequest = {
