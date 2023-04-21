@@ -259,7 +259,7 @@ export function SearchDialog() {
                   }`}
                 />
               </div>
-              <div className="text-xs text-gray-500 flex gap-2 dark:text-gray-100">
+              <div className="text-xs text-gray-500 md:flex space-y-2 md:space-y-0 gap-2 dark:text-gray-100">
                 Or try:{' '}
                 <button
                   type="button"
@@ -303,10 +303,10 @@ export function SearchDialog() {
               </div>
             </div>
             <DialogFooter>
-              <div className="text-xs text-gray-500 flex gap-2 dark:text-gray-100">
+              <div className="text-xs text-gray-500 flex mt-4 md:m-0 dark:text-gray-100">
                 * 回答由AI检索法律文件后生成，仅供参考！
               </div>
-              <Button type="submit" className="bg-red-500">
+              <Button type="submit" className="bg-red-500 block w-full md:w-auto md:inline-block">
                 Ask
               </Button>
             </DialogFooter>

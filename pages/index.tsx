@@ -30,8 +30,8 @@ export default function Home() {
               Made by <Image src={'/logo.png'} width="20" height="20" alt="MagickPen logo" /> MagickPen
             </Link>
           </div>
-          <div className="border-l border-gray-300 w-1 h-4 hidden md:block mt-4 md:m-0" />
-          <div className="flex items-center justify-center space-x-4">
+          <div className="border-l border-gray-300 w-1 h-4 hidden md:block" />
+          <div className="flex items-center justify-center space-x-4 mt-4 md:m-0">
             <div className="opacity-75 transition hover:opacity-100 cursor-pointer">
               <Link
                 href="https://github.com/lvwzhen/law-cn-ai"
