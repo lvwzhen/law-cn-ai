@@ -264,7 +264,7 @@ export function SearchDialog() {
                 <button
                   type="button"
                   className="px-1.5 py-0.5
-                  bg-slate-50 dark:bg-gray-500
+                  bg-slate-50 dark:bg-gray-500  
                   hover:bg-slate-100 dark:hover:bg-gray-600
                   rounded border border-slate-200 dark:border-slate-600
                   transition-colors"
