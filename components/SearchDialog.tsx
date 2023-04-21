@@ -134,7 +134,7 @@ export function SearchDialog() {
           }
 
           const completionResponse: CreateChatCompletionResponse = JSON.parse(e.data)
-          const text = completionResponse.choices[0].message?.content || "";
+          const text = completionResponse.choices[0].delta?.content || "";
 
           setAnswer((answer) => {
             const currentAnswer = answer ?? ''
