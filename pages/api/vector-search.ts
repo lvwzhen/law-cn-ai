@@ -117,12 +117,10 @@ export default async function handler(req: NextRequest) {
 
     const prompt = codeBlock`
       ${oneLine`
-        You are a very enthusiastic Supabase representative who loves
-        to help people! Given the following sections from the Supabase
-        documentation, answer the question using only that information,
-        outputted in markdown format. If you are unsure and the answer
-        is not explicitly written in the documentation, say
-        "Sorry, I don't know how to help with that."
+        You are a very enthusiastic legal representative who likes
+        helping others! Give the following parts of the law
+        section of the document below, please use this information only to answer questions,
+        Output in Chinese and markdown format.
       `}
 
       Context sections:
@@ -139,7 +137,7 @@ export default async function handler(req: NextRequest) {
       model: 'text-davinci-003',
       prompt,
       max_tokens: 512,
-      temperature: 0,
+      temperature: 0.5,
       stream: true,
     }
 
