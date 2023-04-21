@@ -180,7 +180,7 @@ export function SearchDialog() {
       >
         <Search width={15} />
         <span className="border border-l h-5"></span>
-        <span className="inline-block ml-4">Search...</span>
+        <span className="inline-block ml-4">中国法律AI助手</span>
         <kbd
           className="absolute right-3 top-2.5
           pointer-events-none inline-flex h-5 select-none items-center gap-1
@@ -195,9 +195,9 @@ export function SearchDialog() {
       <Dialog open={open}>
         <DialogContent className="sm:max-w-[850px] text-black">
           <DialogHeader>
-            <DialogTitle>OpenAI powered doc search</DialogTitle>
+            <DialogTitle>中国法律AI助手</DialogTitle>
             <DialogDescription>
-              Build your own ChatGPT style search with Next.js, OpenAI & Supabase.
+              我是您的法律助手，请输入您想查询的问题
             </DialogDescription>
             <hr />
             <button className="absolute top-0 right-2 p-2" onClick={() => setOpen(false)}>
@@ -247,7 +247,7 @@ export function SearchDialog() {
 
               <div className="relative">
                 <Input
-                  placeholder="Ask a question..."
+                  placeholder="输入你的法律问题..."
                   name="search"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
@@ -269,10 +269,49 @@ export function SearchDialog() {
                   rounded border border-slate-200 dark:border-slate-600
                   transition-colors"
                   onClick={(_) =>
-                    setSearch('Create a table called profiles with fields id, name, email')
+                    setSearch('离婚需要双方同意吗？')
                   }
                 >
-                  Create a table called profiles with fields id, name, email
+                  离婚需要双方同意吗？
+                </button>
+                <button
+                  type="button"
+                  className="px-1.5 py-0.5
+                  bg-slate-50 dark:bg-gray-500
+                  hover:bg-slate-100 dark:hover:bg-gray-600
+                  rounded border border-slate-200 dark:border-slate-600
+                  transition-colors"
+                  onClick={(_) =>
+                    setSearch('借钱给别人需要注意什么？')
+                  }
+                >
+                  借钱给别人需要注意什么？
+                </button>
+                <button
+                  type="button"
+                  className="px-1.5 py-0.5
+                  bg-slate-50 dark:bg-gray-500
+                  hover:bg-slate-100 dark:hover:bg-gray-600
+                  rounded border border-slate-200 dark:border-slate-600
+                  transition-colors"
+                  onClick={(_) =>
+                    setSearch('民间借贷受国家保护的合法利息是多少？')
+                  }
+                >
+                  民间借贷受国家保护的合法利息是多少？
+                </button>
+                <button
+                  type="button"
+                  className="px-1.5 py-0.5
+                  bg-slate-50 dark:bg-gray-500
+                  hover:bg-slate-100 dark:hover:bg-gray-600
+                  rounded border border-slate-200 dark:border-slate-600
+                  transition-colors"
+                  onClick={(_) =>
+                    setSearch('欠了信用卡的钱还不上要坐牢吗？')
+                  }
+                >
+                  欠了信用卡的钱还不上要坐牢吗？
                 </button>
               </div>
             </div>
