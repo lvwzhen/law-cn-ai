@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { SSE } from 'sse.js'
-import type { CreateCompletionResponse } from 'openai'
+import type { CreateChatCompletionResponse } from 'openai'
 import { X, Loader, User, Frown, CornerDownLeft, Search, Wand } from 'lucide-react'
 
 function promptDataReducer(
@@ -133,8 +133,10 @@ export function SearchDialog() {
             return
           }
 
-          const completionResponse: CreateCompletionResponse = JSON.parse(e.data)
-          const text = completionResponse.choices[0].text
+          // 应该在代码顶部放置断言，以确保 `e.data` 符合 `string` 类型
+          // 另外，请注意，使用类型断言会带来运行时错误的风险，因此对于不确定类型的值，请确保进行有效的类型验证
+          const completionResponse= JSON.parse(e.data);
+          const text = completionResponse.choices[0].delta?.content || "";
 
           setAnswer((answer) => {
             const currentAnswer = answer ?? ''
