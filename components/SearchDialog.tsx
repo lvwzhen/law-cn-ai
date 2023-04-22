@@ -133,9 +133,18 @@ export function SearchDialog() {
             return
           }
 
-          const completionResponse: CreateChatCompletionResponse = JSON.parse(e.data)
-          console.log(completionResponse.choices[0].message?.content);
+          // 应该在代码顶部放置断言，以确保 `e.data` 符合 `string` 类型
+          // 另外，请注意，使用类型断言会带来运行时错误的风险，因此对于不确定类型的值，请确保进行有效的类型验证
+          console.assert(typeof e.data === 'string', 'e.data must be a string');
+          const completionResponse: CreateChatCompletionResponse = JSON.parse(e.data);
+          console.log('completionResponse:', completionResponse);  // Debug: 输出 completionResponse 对象
+          console.assert(Array.isArray(completionResponse.choices), 'completionResponse.choices must be an array');  // Debug: 确认 choices 是一个数组
+          console.assert(completionResponse.choices.length > 0, 'completionResponse.choices must not be empty');  // Debug: 确认 choices 不为空
+          console.assert(completionResponse.choices[0].message, 'completionResponse.choices[0].message must exist');  // Debug: 确认 message 存在
+          console.log('completionResponse.choices[0].message:', completionResponse.choices[0].message);  // Debug: 输出 message 对象
           const text = completionResponse.choices[0].message?.content || "";
+          console.log('text:', text);  // Debug: 输出 text 的值
+
 
           setAnswer((answer) => {
             const currentAnswer = answer ?? ''
