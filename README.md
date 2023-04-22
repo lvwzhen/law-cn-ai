@@ -1,4 +1,4 @@
-# 法律AI助手
+# AI 法律助手
 
 法律文件来源：https://github.com/LawRefBook/Laws
 

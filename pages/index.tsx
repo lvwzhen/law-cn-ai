@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>法律AI助手</title>
+        <title>AI 法律助手</title>
         <meta
           name="description"
-          content="法律AI助手"
+          content="AI 法律助手"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -35,7 +35,7 @@ export default function Home() {
         `}
       </Script>
       <main className={styles.main}>
-        <h1 className='text-slate-700 font-bold text-2xl mb-12 flex items-center gap-3'><Image src={'/logo.png'} width="32" height="32" alt="MagickPen logo" /> 法律AI助手</h1>
+        <h1 className='text-slate-700 font-bold text-2xl mb-12 flex items-center gap-3'><Image src={'/logo.png'} width="32" height="32" alt="MagickPen logo" /> AI 法律助手</h1>
         <div className={styles.center}>
           <SearchDialog />
         </div>

@@ -200,7 +200,7 @@ export function SearchDialog() {
       <Dialog open={open}>
         <DialogContent className="sm:max-w-[850px] text-black">
           <DialogHeader>
-            <DialogTitle>法律AI助手</DialogTitle>
+            <DialogTitle>AI 法律助手</DialogTitle>
             <DialogDescription>
               我是您的法律助手，请输入您想查询的问题
             </DialogDescription>
