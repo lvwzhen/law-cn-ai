@@ -178,6 +178,8 @@ export function SearchDialog() {
         text-slate-500 dark:text-slate-400  hover:text-slate-700 dark:hover:text-slate-300
         transition-colors
         rounded-full
+        dark:bg-slate-800
+        dark:hover:bg-slate-700
         bg-white/50 backdrop-blur-sm hover:bg-white/80
         border border-slate-200 dark:border-slate-500 hover:border-slate-300 dark:hover:border-slate-500
         w-full
