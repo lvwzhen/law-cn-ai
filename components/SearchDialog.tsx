@@ -182,7 +182,7 @@ export function SearchDialog() {
       >
         <Search width={15} />
         <span className="border border-l h-5"></span>
-        <span className="inline-block ml-4">中国法律AI助手</span>
+        <span className="inline-block ml-4">法律AI助手</span>
         <kbd
           className="absolute right-3 top-2.5
           pointer-events-none inline-flex h-5 select-none items-center gap-1
@@ -197,7 +197,7 @@ export function SearchDialog() {
       <Dialog open={open}>
         <DialogContent className="sm:max-w-[850px] text-black">
           <DialogHeader>
-            <DialogTitle>中国法律AI助手</DialogTitle>
+            <DialogTitle>法律AI助手</DialogTitle>
             <DialogDescription>
               我是您的法律助手，请输入您想查询的问题
             </DialogDescription>
