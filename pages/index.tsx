@@ -42,7 +42,7 @@ export default function Home() {
 
         <div className='mt-28 md:mt-40 text-center w-full'>
           <h2 className='text-slate-500'>更多好玩</h2>
-          <ul className='grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 mt-6 max-w-lg mx-auto text-xs'>
+          <ul className='grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 mt-4 max-w-lg mx-auto text-xs'>
             <li>
               <Link href="https://magickpen.com/?ref=lawcnai" className=' text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block'>
                 <Image src={'/MagickPen.png'}  width={100} height="20" className='w-full mb-1 h-5 object-contain' alt="MagickPen - 智能写作助手" />
