@@ -136,9 +136,7 @@ export function SearchDialog() {
           // 应该在代码顶部放置断言，以确保 `e.data` 符合 `string` 类型
           // 另外，请注意，使用类型断言会带来运行时错误的风险，因此对于不确定类型的值，请确保进行有效的类型验证
           const completionResponse= JSON.parse(e.data);
-          console.log('completionResponse:', completionResponse.choices[0]);  // Debug: 输出 completionResponse 对象
           const text = completionResponse.choices[0].delta?.content || "";
-          console.log('text:', text);  // Debug: 输出 text 的值
 
           setAnswer((answer) => {
             const currentAnswer = answer ?? ''
