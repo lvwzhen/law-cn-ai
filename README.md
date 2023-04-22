@@ -1,10 +1,40 @@
-# 法律AI助手
+# AI 法律助手
 
 法律文件来源：https://github.com/LawRefBook/Laws
 
 项目模板：https://github.com/supabase-community/nextjs-openai-doc-search
 
 这个项目从 `pages` 目录中获取所有的 `.mdx` 文件，并将其处理成自定义上下文，以在[OpenAI 文本自动补全](https://platform.openai.com/docs/guides/completion)提示中使用。
+
+## 赞助商
+
+<table>
+  <tr>
+    <td>
+      <a href="https://magickpen.com/?ref=lawcnai" target="_blank">
+        <img alt="MagickPen" src="public/MagickPen.png" height="32px;" />
+      </a>
+    </td>
+    <td>
+      <a href="https://www.teach-anything.com/?ref=lawcnai" target="_blank">
+        <img alt="TeachAnything" src="public/TeachAnything.png" height="32px;" />
+      </a>
+    </td>
+    <td>
+      <a href="https://openl.io/?ref=lawcnai" target="_blank">
+        <img alt="OpenL" src="public/OpenL.png" height="32px;" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://afdian.net/a/lvwzhen/plan" target="_blank"> ❤️ 请赞助我们</a>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
 
 ## 部署
 

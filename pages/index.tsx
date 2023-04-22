@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>法律AI助手</title>
+        <title>AI 法律助手</title>
         <meta
           name="description"
-          content="法律AI助手"
+          content="AI 法律助手"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -35,24 +35,43 @@ export default function Home() {
         `}
       </Script>
       <main className={styles.main}>
+        <h1 className='text-slate-700 font-bold text-2xl mb-12 flex items-center gap-3'><Image src={'/logo.png'} width="32" height="32" alt="MagickPen logo" /> AI 法律助手</h1>
         <div className={styles.center}>
           <SearchDialog />
         </div>
 
-        <div className="py-8 w-full md:flex items-center justify-center md:space-x-6">
-          <div className="opacity-75 transition hover:opacity-100 cursor-pointer">
-            <Link href="https://magickpen.com/?ref=lawcnai" className="flex gap-1 items-center justify-center text-base mr-2">
-              Made by <Image src={'/logo.png'} width="20" height="20" alt="MagickPen logo" /> MagickPen
-            </Link>
-          </div>
-          <div className="border-l border-gray-300 w-1 h-4 hidden md:block" />
-          <div className="flex items-center justify-center space-x-4 mt-4 md:m-0">
+        <div className='mt-28 md:mt-40 text-center w-full'>
+          <h2 className='text-slate-500'>更多好玩</h2>
+          <ul className='grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 mt-6 max-w-lg mx-auto text-xs'>
+            <li>
+              <Link href="https://magickpen.com/?ref=lawcnai" className=' text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block'>
+                <Image src={'/MagickPen.png'}  width={100} height="20" className='w-full mb-1 h-5 object-contain' alt="MagickPen - 智能写作助手" />
+                智能写作助手
+              </Link>
+            </li>
+            <li>
+              <Link href="https://www.teach-anything.com/?ref=lawcnai" className=' text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block'>
+                <Image src={'/TeachAnything.png'} width={100} height="20" className='w-full mb-1 h-5 object-contain' alt="Teach Anything - AI 百科全书" />
+                AI 百科全书
+              </Link>
+            </li>
+            <li>
+              <Link href="https://openl.io/?ref=lawcnai" className=' text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block'>
+                <Image src={'/OpenL.png'} width={100} height="20" className='w-full mb-1 h-5 object-contain' alt="OpenL - AI 翻译专家" />
+                AI 翻译专家
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className="py-10 w-full md:flex items-center justify-center md:space-x-6">
+          <div className="flex items-center justify-center space-x-6 mt-4 md:m-0">
             <div className="opacity-75 transition hover:opacity-100 cursor-pointer">
               <Link
                 href="https://github.com/lvwzhen/law-cn-ai"
                 className="flex items-center justify-center"
               >
-                <Image src={'/github.svg'} width="20" height="20" alt="Github logo" />
+                <Image src={'/github.svg'} width="24" height="24" alt="Github logo" />
               </Link>
             </div>
             <div className="opacity-75 transition hover:opacity-100 cursor-pointer">
@@ -60,7 +79,7 @@ export default function Home() {
                 href="https://twitter.com/lvwzhen"
                 className="flex items-center justify-center"
               >
-                <Image src={'/twitter.svg'} width="20" height="20" alt="Twitter logo" />
+                <Image src={'/twitter.svg'} width="24" height="24" alt="Twitter logo" />
               </Link>
             </div>
           </div>
