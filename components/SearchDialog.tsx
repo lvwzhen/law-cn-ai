@@ -306,7 +306,7 @@ export function SearchDialog() {
             </div>
             <DialogFooter>
               <div className="text-xs text-gray-500 mt-4 md:m-0 dark:text-gray-100">
-                * 回答由 AI 检索法律文件后生成，不保证准确率，仅供参考学习！<a href="https://afdian.net/a/lvwzhen" className='ml-1 underline decoration-wavy decoration-indigo-500 underline-offset-2 hover:text-indigo-500' target='_blank'>打赏赞助</a>
+                * 回答由 AI 检索法律文件后生成，不保证准确率，仅供参考学习！<a href="https://afdian.net/a/lvwzhen/plan" className='ml-1 underline decoration-wavy decoration-indigo-500 underline-offset-2 hover:text-indigo-500' target='_blank'>打赏赞助</a>
               </div>
               <Button type="submit" className="bg-red-500 block w-full md:w-auto md:inline-block">
                 Ask
