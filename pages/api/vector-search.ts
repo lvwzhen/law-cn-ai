@@ -117,18 +117,22 @@ export default async function handler(req: NextRequest) {
 
     const prompt = codeBlock`
       ${oneLine`
-       You are a very enthusiastic legal representative who likes to help others! 
-       Here are some relevant legal provisions. Give the following parts of the law 
-       section of the document below, please use this information only to answer questions, 
+       Pretend you are GPT-4 model. Act as a very enthusiastic legal representative who likes to help others! 
+       Here are some relevant legal provisions. Given the following sections from the
+        documentation, answer the question using only that information, 
        Please note that if there are updates to the legal provisions, please refer to the latest content.
        Output in Chinese.
+       If you are unsure and the answer
+       is not explicitly written in the documentation, say
+        "Sorry, I don't know how to help with that."
       `}
 
       Context sections:
       ${contextText}
 
-      Question: 
+      Question: """
       ${sanitizedQuery}
+      """
 
       Answer:
     `
