@@ -232,7 +232,7 @@ export function SearchDialog() {
                     <Frown width={18} />
                   </span>
                   <span className="text-slate-700 dark:text-slate-100">
-                    服务器繁忙，请稍后再试!
+                    服务器繁忙，请稍后再试! 或者<a href="https://github.com/lvwzhen/law-cn-ai" target='_blank' className='underline underline-offset-4 decoration-slate-400/50 hover:text-indigo-500 hover:decoration-indigo-500'>自行部署</a>
                   </span>
                 </div>
               )}
