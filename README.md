@@ -21,7 +21,7 @@
       </a>
     </td>
     <td>
-      <a href=https://openl.io/?ref=lawcnai" target="_blank">
+      <a href="https://openl.io/?ref=lawcnai" target="_blank">
         <img alt="OpenL" src="public/OpenL.png" height="32px;" />
       </a>
     </td>
