@@ -6,32 +6,35 @@
 
 这个项目从 `pages` 目录中获取所有的 `.mdx` 文件，并将其处理成自定义上下文，以在[OpenAI 文本自动补全](https://platform.openai.com/docs/guides/completion)提示中使用。
 
-## 赞助商
+## 更多好玩
 
 <table>
   <tr>
-    <td>
+    <td width="300px" align="center">
       <a href="https://magickpen.com/?ref=lawcnai" target="_blank">
-        <img alt="MagickPen" src="public/MagickPen.png" height="32px;" />
+        <img alt="MagickPen" src="public/MagickPen.png" height="30px" />
+        <p>智能写作助手</p>
       </a>
     </td>
-    <td>
+   <td width="300px" align="center">
       <a href="https://www.teach-anything.com/?ref=lawcnai" target="_blank">
-        <img alt="TeachAnything" src="public/TeachAnything.png" height="32px;" />
-      </a>
-    </td>
-    <td>
-      <a href="https://openl.io/?ref=lawcnai" target="_blank">
-        <img alt="OpenL" src="public/OpenL.png" height="32px;" />
+        <img alt="TeachAnything" src="public/TeachAnything.png" height="30px" />
+        <p>AI 百科全书</p>
       </a>
     </td>
   </tr>
   <tr>
-    <td>
-      <a href="https://afdian.net/a/lvwzhen/plan" target="_blank"> ❤️ 请赞助我们</a>
+   <td width="300px" align="center">
+      <a href="https://openl.io/?ref=lawcnai" target="_blank">
+        <img alt="OpenL" src="public/OpenL.png" height="30px" />
+        <p>AI 翻译专家</p>
+      </a>
     </td>
-    <td></td>
-    <td></td>
+   <td width="300px" align="center">
+      <a href="https://afdian.net/a/lvwzhen/plan" target="_blank">
+        <p>❤️ 打赏赞助 ❤️ </p>
+      </a>
+    </td>
   </tr>
 </table>
 
