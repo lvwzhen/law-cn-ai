@@ -114,7 +114,7 @@ sequenceDiagram
 确保已安装并在本地运行 Docker。然后运行
 
 ```bash
-supabase start
+npx supabase start
 ```
 
 ### 启动 Next.js 应用程序
