@@ -140,3 +140,10 @@ pnpm dev
 [![Video: How I Built Supabase's OpenAI Doc Search](https://img.youtube.com/vi/Yhtjd7yGGGA/0.jpg)](https://www.youtube.com/watch?v=Yhtjd7yGGGA)
 
     此文件由 ChatGPT 提供翻译
+    
+   
+   
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=lvwzhen/law-cn-ai&type=Date)](https://star-history.com/#lvwzhen/law-cn-ai&Date)
+
