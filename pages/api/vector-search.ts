@@ -11,7 +11,7 @@ export const config = {
 }
 
 const openAiKey = process.env.OPENAI_KEY
-const openAiBaseUrl = process.env.OPENAI_BASE_URL
+const openAiBaseUrl = process.env.OPENAI_BASE_URL || 'api.openai.com';
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
 
@@ -45,7 +45,7 @@ export default async function handler(req: NextRequest) {
 
     // Moderate the content to comply with OpenAI T&C
     const sanitizedQuery = query.trim()
-    const moderationResponse = await fetch('https://' + openAiBaseUrl + '/v1/v1/moderations', {
+    const moderationResponse = await fetch('https://' + openAiBaseUrl + '/v1/moderations', {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${openAiKey}`,
@@ -65,7 +65,7 @@ export default async function handler(req: NextRequest) {
       })
     }
 
-    const embeddingResponse = await fetch('https://' + openAiBaseUrl + '/v1/v1/embeddings', {
+    const embeddingResponse = await fetch('https://' + openAiBaseUrl + '/v1/embeddings', {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${openAiKey}`,
