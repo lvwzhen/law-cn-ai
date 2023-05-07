@@ -10,53 +10,60 @@
 
 <table>
   <tr>
-    <td width="300px" align="center">
+    <td width="200px" align="center">
       <a href="https://magickpen.com/?ref=lawcnai" target="_blank">
         <img alt="MagickPen" src="public/MagickPen.png" height="30px" />
         <p>智能写作助手</p>
       </a>
     </td>
-   <td width="300px" align="center">
+   <td width="200px" align="center">
       <a href="https://www.teach-anything.com/?ref=lawcnai" target="_blank">
         <img alt="TeachAnything" src="public/TeachAnything.png" height="30px" />
         <p>AI 百科全书</p>
       </a>
     </td>
+    <td width="200px" align="center">
+      <a href="https://better.avatarprompt.net/?ref=lawcnai" target="_blank">
+        <img alt="TeachAnything" src="public/BetterPrompt.png" height="30px" />
+        <p>Prompt 生成器</p>
+      </a>
+    </td>
   </tr>
   <tr>
-   <td width="300px" align="center">
+   <td width="200px" align="center">
       <a href="https://openl.io/?ref=lawcnai" target="_blank">
         <img alt="OpenL" src="public/OpenL.png" height="30px" />
         <p>AI 翻译专家</p>
       </a>
     </td>
-   <td width="300px" align="center">
+   <td width="200px" align="center">
       <a href="https://afdian.net/a/lvwzhen/plan" target="_blank">
         <p>❤️ 打赏赞助 ❤️ </p>
       </a>
     </td>
+    <td width="200px" align="center">
+    </td>
   </tr>
 </table>
 
-
 ## 部署
 
-部署此starter到Vercel。Supabase集成将自动设置所需的环境变量并配置您的[数据库概要](./supabase/migrations/20230406025118_init.sql)。您只需要设置 `OPENAI_KEY`，然后就可以开始了！
+部署此 starter 到 Vercel。Supabase 集成将自动设置所需的环境变量并配置您的[数据库概要](./supabase/migrations/20230406025118_init.sql)。您只需要设置 `OPENAI_KEY`，然后就可以开始了！
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?demo-title=Next.js%20Law%20CN%20AI&demo-description=Template%20for%20building%20your%20own%20law%20cn%20ai%20powered%20by%20Next.js%2C%20OpenAI%2C%20and%20Supabase.&demo-url=https%3A%2F%2Fsupabase.com%2Fdocs&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F1OntM6THNEUvlUsYy6Bjmf%2F475e39dbc84779538c8ed47c63a37e0e%2Fnextjs_openai_doc_search_og.png&project-name=Next.js%20OpenAI%20Doc%20Search%20Starter&repository-name=law-cn-ai&repository-url=https%3A%2F%2Fgithub.com%2Flvwzhen%2Flaw-cn-ai%2F&from=github&integration-ids=oac_jUduyjQgOyzev1fjrW83NYOv&env=OPENAI_KEY&envDescription=Get%20your%20OpenAI%20API%20key%3A&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys&teamCreateStatus=hidden&external-id=law-cn-ai)
 
 ## 技术细节
 
-构建您自己的自定义ChatGPT涉及四个步骤：
+构建您自己的自定义 ChatGPT 涉及四个步骤：
 
 1. [👷 构建时间] 预处理知识库（您的 `pages` 文件夹中的 `.mdx` 文件）。
-2. [👷 构建时间] 在PostgreSQL中使用 [pgvector](https://supabase.com/docs/guides/database/extensions/pgvector) 存储嵌入向量。
+2. [👷 构建时间] 在 PostgreSQL 中使用 [pgvector](https://supabase.com/docs/guides/database/extensions/pgvector) 存储嵌入向量。
 3. [🏃 运行时] 执行向量相似性搜索，查找与问题相关的内容。
-4. [🏃 运行时] 将内容注入到OpenAI GPT-3文本自动补全中，并将响应流式传输到客户端。
+4. [🏃 运行时] 将内容注入到 OpenAI GPT-3 文本自动补全中，并将响应流式传输到客户端。
 
 ## 👷 构建时间
 
-步骤1和2发生在构建时间，例如当Vercel构建您的Next.js应用程序时。此时执行 [`generate-embeddings`](./lib/generate-embeddings.ts) 脚本，该脚本执行以下任务：
+步骤 1 和 2 发生在构建时间，例如当 Vercel 构建您的 Next.js 应用程序时。此时执行 [`generate-embeddings`](./lib/generate-embeddings.ts) 脚本，该脚本执行以下任务：
 
 ```mermaid
 sequenceDiagram
@@ -77,7 +84,7 @@ sequenceDiagram
 
 ## 🏃 运行时
 
-步骤3和4在运行时发生，即用户提交问题时。发生这种情况时，执行以下一系列任务：
+步骤 3 和 4 在运行时发生，即用户提交问题时。发生这种情况时，执行以下一系列任务：
 
 ```mermaid
 sequenceDiagram
@@ -100,7 +107,7 @@ sequenceDiagram
 
 此为 [`SearchDialog（客户端）`](./components/SearchDialog.tsx)组件和[`vector-search（边缘函数）`](./pages/api/vector-search.ts)负责的相关文件。
 
-数据库的初始化，包括 `pgvector` 扩展的设置存储在 [`supabase/migrations`文件夹](./supabase/migrations/)中，并在运行 `supabase start` 时自动应用于本地PostgreSQL实例。
+数据库的初始化，包括 `pgvector` 扩展的设置存储在 [`supabase/migrations`文件夹](./supabase/migrations/)中，并在运行 `supabase start` 时自动应用于本地 PostgreSQL 实例。
 
 ## 本地开发
 
@@ -127,23 +134,20 @@ pnpm dev
 
 ## 部署
 
-仅需将此 starter 部署到 Vercel。Supabase集成将自动设置所需的环境变量并配置您的[数据库Schema](./supabase/migrations/20230406025118_init.sql)。您只需设置 `OPENAI_KEY` 并开始使用即可！
+仅需将此 starter 部署到 Vercel。Supabase 集成将自动设置所需的环境变量并配置您的[数据库 Schema](./supabase/migrations/20230406025118_init.sql)。您只需设置 `OPENAI_KEY` 并开始使用即可！
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?demo-title=Next.js%20Law%20CN%20AI&demo-description=Template%20for%20building%20your%20own%20law%20cn%20ai%20powered%20by%20Next.js%2C%20OpenAI%2C%20and%20Supabase.&demo-url=https%3A%2F%2Fsupabase.com%2Fdocs&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F1OntM6THNEUvlUsYy6Bjmf%2F475e39dbc84779538c8ed47c63a37e0e%2Fnextjs_openai_doc_search_og.png&project-name=Next.js%20OpenAI%20Doc%20Search%20Starter&repository-name=law-cn-ai&repository-url=https%3A%2F%2Fgithub.com%2Flvwzhen%2Flaw-cn-ai%2F&from=github&integration-ids=oac_jUduyjQgOyzev1fjrW83NYOv&env=OPENAI_KEY&envDescription=Get%20your%20OpenAI%20API%20key%3A&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys&teamCreateStatus=hidden&external-id=law-cn-ai)
 
 ## 了解更多
 
-- 阅读我们如何建立[Supabase文档的ChatGPT](https://supabase.com/blog/chatgpt-supabase-docs)的博客帖子。
+- 阅读我们如何建立[Supabase 文档的 ChatGPT](https://supabase.com/blog/chatgpt-supabase-docs)的博客帖子。
 - [[Docs] pgvector：嵌入和向量相似性](https://supabase.com/docs/guides/database/extensions/pgvector)函数。
 - 观看[Greg](https://twitter.com/ggrdson) 关于[Rabbit Hole Syndrome YouTube Channel](https://www.youtube.com/@RabbitHoleSyndrome)的 "How I built this" [video](https://youtu.be/Yhtjd7yGGGA):
 
 [![Video: How I Built Supabase's OpenAI Doc Search](https://img.youtube.com/vi/Yhtjd7yGGGA/0.jpg)](https://www.youtube.com/watch?v=Yhtjd7yGGGA)
 
     此文件由 ChatGPT 提供翻译
-    
-   
-   
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=lvwzhen/law-cn-ai&type=Date)](https://star-history.com/#lvwzhen/law-cn-ai&Date)
-
