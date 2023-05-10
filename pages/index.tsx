@@ -13,17 +13,13 @@ export default function Home() {
     <>
       <Head>
         <title>AI 法律助手</title>
-        <meta
-          name="description"
-          content="AI 法律助手"
-        />
+        <meta name="description" content="AI 法律助手" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        
       </Head>
       <Script
-      src="https://www.googletagmanager.com/gtag/js?id=G-6GCGYXNM3S"
-      strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-6GCGYXNM3S"
+        strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
@@ -35,45 +31,100 @@ export default function Home() {
         `}
       </Script>
       <main className={styles.main}>
-        <h1 className='text-slate-700 font-bold text-2xl mb-12 flex items-center gap-3 dark:text-slate-400'><Image src={'/logo.png'} width="32" height="32" alt="MagickPen logo" /> AI 法律助手</h1>
+        <h1 className="text-slate-700 font-bold text-2xl mb-12 flex items-center gap-3 dark:text-slate-400">
+          <Image src={'/logo.png'} width="32" height="32" alt="MagickPen logo" /> AI 法律助手
+        </h1>
         <div className={styles.center}>
           <SearchDialog />
         </div>
 
-        <div className='mt-28 md:mt-40 text-center w-full'>
-          <h2 className='text-slate-500'>更多好玩</h2>
-          <ul className='grid grid-cols-2 md:grid-cols-4 gap-3 mt-4 max-w-2xl mx-auto text-xs'>
+        <div className="mt-28 md:mt-40 text-center w-full">
+          <h2 className="text-slate-500">更多好玩</h2>
+          <ul className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4 max-w-2xl mx-auto text-xs">
             <li>
-              <Link href="https://magickpen.com/?ref=lawcnai" className=' 
+              <Link
+                href="https://magickpen.com/?ref=lawcnai"
+                className=" 
               dark:bg-white/30
               dark:text-slate-900
               dark:border-slate-900
-               text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block'>
-                <Image src={'/MagickPen.png'}  width={100} height="20" className='w-full mb-1 h-5 object-contain' alt="MagickPen - 智能写作助手" />
+               text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block"
+              >
+                <Image
+                  src={'/MagickPen.png'}
+                  width={100}
+                  height="20"
+                  className="w-full mb-1 h-5 object-contain"
+                  alt="MagickPen - 智能写作助手"
+                />
                 智能写作助手
               </Link>
             </li>
             <li>
-              <Link href="https://www.teach-anything.com/?ref=lawcnai" className='dark:bg-white/30
+              <Link
+                href="https://www.teach-anything.com/?ref=lawcnai"
+                className="dark:bg-white/30
               dark:border-slate-900
-              dark:text-slate-900 text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block'>
-                <Image src={'/TeachAnything.png'} width={100} height="20" className='w-full mb-1 h-5 object-contain' alt="Teach Anything - AI 百科全书" />
+              dark:text-slate-900 text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block"
+              >
+                <Image
+                  src={'/TeachAnything.png'}
+                  width={100}
+                  height="20"
+                  className="w-full mb-1 h-5 object-contain"
+                  alt="Teach Anything - AI 百科全书"
+                />
                 AI 百科全书
               </Link>
             </li>
             <li>
-              <Link href="https://better.avatarprompt.net/?ref=lawcnai" className='dark:bg-white/30
+              <Link
+                href="https://ask2end.com/?ref=lawcnai"
+                className="dark:bg-white/30
               dark:border-slate-900
-              dark:text-slate-900 text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block'>
-                <Image src={'/BetterPrompt.png'} width={100} height="20" className='w-full mb-1 h-5 object-contain' alt="Teach Anything - AI 百科全书" />
+              dark:text-slate-900 text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block"
+              >
+                <Image
+                  src={'/Ask2End.png'}
+                  width={100}
+                  height="20"
+                  className="w-full mb-1 h-5 object-contain"
+                  alt="Ask2End - 打破砂锅问到底"
+                />
+                打破砂锅问到底
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://better.avatarprompt.net/?ref=lawcnai"
+                className="dark:bg-white/30
+              dark:border-slate-900
+              dark:text-slate-900 text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block"
+              >
+                <Image
+                  src={'/BetterPrompt.png'}
+                  width={100}
+                  height="20"
+                  className="w-full mb-1 h-5 object-contain"
+                  alt="Teach Anything - AI 百科全书"
+                />
                 Prompt 生成器
               </Link>
             </li>
             <li>
-              <Link href="https://openl.io/?ref=lawcnai" className='dark:bg-white/30
+              <Link
+                href="https://openl.io/?ref=lawcnai"
+                className="dark:bg-white/30
               dark:border-slate-900
-              dark:text-slate-900 text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block'>
-                <Image src={'/OpenL.png'} width={100} height="20" className='w-full mb-1 h-5 object-contain' alt="OpenL - AI 翻译专家" />
+              dark:text-slate-900 text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block"
+              >
+                <Image
+                  src={'/OpenL.png'}
+                  width={100}
+                  height="20"
+                  className="w-full mb-1 h-5 object-contain"
+                  alt="OpenL - AI 翻译专家"
+                />
                 AI 翻译专家
               </Link>
             </li>
@@ -91,10 +142,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="opacity-75 transition hover:opacity-100 cursor-pointer">
-              <Link
-                href="https://twitter.com/lvwzhen"
-                className="flex items-center justify-center"
-              >
+              <Link href="https://twitter.com/lvwzhen" className="flex items-center justify-center">
                 <Image src={'/twitter.svg'} width="24" height="24" alt="Twitter logo" />
               </Link>
             </div>
