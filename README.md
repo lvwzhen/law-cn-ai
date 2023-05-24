@@ -54,6 +54,12 @@
 
 楼主太懒了，感谢 [GoJun](https://github.com/Freelander) 帮忙写了教程：https://eibot3u32o.feishu.cn/docx/L46Pdp3fjouPUvxaNzPckKctno3
 
+### 打开自动更新（可选）
+
+> 如果你遇到了 Upstream Sync 执行错误，请手动 Sync Fork 一次！
+
+当你 fork 项目之后，由于 Github 的限制，需要手动去你 fork 后的项目的 Actions 页面启用 Workflows，并启用 Upstream Sync Action，启用之后即可开启每小时定时自动更新, [详情](./doc/sync.md)
+
 ## 技术细节
 
 构建您自己的自定义 ChatGPT 涉及四个步骤：
