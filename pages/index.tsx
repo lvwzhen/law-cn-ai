@@ -62,6 +62,40 @@ export default function Home() {
             </li>
             <li>
               <Link
+                href="https://reviewgpt.net/?ref=lawcnai"
+                className="dark:bg-white/30
+              dark:border-slate-900
+              dark:text-slate-900 text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block"
+              >
+                <Image
+                  src={'/ReviewGPT.png'}
+                  width={100}
+                  height="20"
+                  className="w-full mb-1 h-5 object-contain"
+                  alt="ReviewGPT - Make Your Writing Awesome"
+                />
+                AI 改写文章
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://openl.io/?ref=lawcnai"
+                className="dark:bg-white/30
+              dark:border-slate-900
+              dark:text-slate-900 text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block"
+              >
+                <Image
+                  src={'/OpenL.png'}
+                  width={100}
+                  height="20"
+                  className="w-full mb-1 h-5 object-contain"
+                  alt="OpenL - AI 翻译专家"
+                />
+                AI 翻译专家
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="https://www.teach-anything.com/?ref=lawcnai"
                 className="dark:bg-white/30
               dark:border-slate-900
@@ -111,23 +145,7 @@ export default function Home() {
                 Prompt 生成器
               </Link>
             </li>
-            <li>
-              <Link
-                href="https://openl.io/?ref=lawcnai"
-                className="dark:bg-white/30
-              dark:border-slate-900
-              dark:text-slate-900 text-slate-400  border border-slate-300/30 transition-all hover:bg-white/50 hover:backdrop-blur-md py-2.5 rounded-md block"
-              >
-                <Image
-                  src={'/OpenL.png'}
-                  width={100}
-                  height="20"
-                  className="w-full mb-1 h-5 object-contain"
-                  alt="OpenL - AI 翻译专家"
-                />
-                AI 翻译专家
-              </Link>
-            </li>
+            
           </ul>
         </div>
 
